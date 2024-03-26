@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; /* Adjust font family */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+p {
+  line-height: 1.6;
+}
+
+.live-filter {
+  width: 100%;
+  box-shadow: 1rem 1rem 2rem rgb(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  background-color: aliceblue;
+}
+
+.search {
+  background-color: #432c7a;
+  height: 32vh;
+  width: 100%;
+  padding: 2rem 0;
+  color: #fff;
+}
+.logo{
+  background-image: url("trendflowhub-logo.png");
+  background-size: cover;
+  margin-left: 4vh;
+  margin-bottom: 1vh;
+  height: 6vh;
+  width: 45vh;
+}
+.search h1 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.search input {
+  width: 50%; /* Adjust width */
+  border: none;
+  padding: 0.8rem 0.5rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif; /* Adjust font family */
+  outline: none;
+  border-radius: 0.3rem;
+  margin-right: 0.7rem; /* Add margin for spacing */
+}
+
+.search button {
+
+  font-size: 1rem;
+  background-color: #fff; /* Change button background color */
+  color: #432c7a; /* Change button text color */
+  border: none;
+  padding: 0.8rem .5rem;
+  font-family: "Poppins", sans-serif; /* Adjust font family */
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+  background-color: #432c7a; /* Change button background color on hover */
+  color: #fff; /* Change button text color on hover */
+}
+
+.user-info {
+  padding: 1rem;
+  height: 40rem;
+  overflow-y: auto;
+}
+
+.filters,
+.options {
+  margin: 1rem; /* Add margin for separation */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.filters label,
+.options label {
+  display: 0rem;
+  margin-bottom: 0rem; 
+}
+
+.filters select,
+.options select {
+  width: 19vh;
+  padding: 0.1rem; 
+  border-radius: 0.3rem;
+  outline: none;
+}
+.search button {
+  background-color: #fff; /* Change button background color */
+  color: #432c7a; /* Change button text color */
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-family: "Poppins", sans-serif; /* Adjust font family */
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Post List Enhancements */
+.user-list {
+  list-style-type: none; /* Remove default list styling */
+}
+
+.user-list li {
+  background-color: #fff; /* Light background for each post */
+  margin-bottom: 2rem; /* Space between posts */
+  padding: 1.5rem; /* Padding inside each post */
+  border-radius: 10px; /* Rounded corners for post cards */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  text-align: left; /* Align text to the left */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between; /* Distribute space */
+}
+
+.user-list li p {
+  margin: 0.5rem 0; /* Margin around paragraphs */
+}
+
+/* Enhance the header within each post */
+.user-list li h3 {
+  color: #432c7a; /* Theme color for headers */
+  margin-bottom: 1rem; /* Space below headers */
+}
+
+/* Style for meta information (likes, comments, etc.) */
+.post-meta {
+  color: #666; /* Dark gray for meta text */
+  font-size: 0.9rem; /* Smaller font size for meta information */
+  margin-top: 1rem; /* Space above meta section */
+}
+
+/* Buttons and Links inside posts */
+.user-list li button,
+.user-list li a {
+  background-color: #432c7a;
+  color: #fff;
+  text-decoration: none; /* Remove underline from links */
+  padding: 0.5rem 1rem; /* Padding inside buttons/links */
+  border: none; /* Remove border from buttons */
+  border-radius: 5px; /* Rounded corners for buttons/links */
+  margin-top: 1rem; /* Space above buttons/links */
+  display: inline-block; /* Allow for inline placement */
+  cursor: pointer; /* Cursor for clickable elements */
+}
+
+.user-list li button:hover,
+.user-list li a:hover {
+  background-color: #311c5d; /* Darker shade on hover */
+}
+
+.form-container {
+  display: flex;
+  justify-content: left; /* Center the form horizontally */
+  width: 100%; /* Full width to center within */
+  margin-top: 2rem; /* Space above the form */
+}
+
+.post-submission {
+  width: 100%;
+  max-width: 600px; /* Maximum width of the form for larger screens */
+  margin: 0 auto; /* Center the form */
+  padding: 2rem;
+  background-color: #432c7a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.post-submission h2 {
+  color: white; /* Theme color for headers */
+  margin-bottom: 1.5rem; /* Space below the header */
+}
+
+.post-submission form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center form elements */
+}
+
+.post-submission form input,
+.post-submission form select,
+.post-submission form button {
+  width: 80%; /* Full width within the form */
+  padding: 0.8rem; /* Adequate padding for touch targets */
+  margin: 0.5rem 0; /* Space out elements */
+  border-radius: 0.3rem; /* Rounded corners */
+  border: 1px solid #ccc; /* Subtle border */
+  font-family: "Poppins", sans-serif; /* Consistent font family */
+}
+
+.post-submission form button {
+  width: 20vh;
+  background-color: white; /* Button color */
+  color: #432c7a; /* Button text color */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.post-submission form button:hover {
+  color: white;
+  background-color: #311c5d; /* Darker shade on hover */
+}
+
+/* Adjusting the width and margin for select elements to align with input fields */
+.post-submission form select {
+  width: calc(80% + 1.6rem); /* Counteract default browser styling */
+  margin-left: -0.8rem;
+  margin-right: -0.8rem;
+}
+
+/* Ensure consistent appearance for datetime-local input */
+.post-submission form input[type="datetime-local"] {
+  font-family: "Poppins", sans-serif;
+}
+/* CSS for the Add Post Button */
+.add-post-button {
+  background-color: #432c7a;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem; /* Adjust as needed */
+  margin-left: 1rem; /* Adjust as needed */
+  
+}
+
+.add-post-button:hover {
+  background-color: #311c5d;
+}
