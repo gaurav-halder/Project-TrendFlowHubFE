@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         postData.shareCount = parseInt(postData.shareCount, 10);
 
         try {
-            const response = await fetch('https://be-basicsocialmedia.onrender.com/api/posts', {
+            const response = await fetch('https://project-trendflowhub-backend.onrender.com/api/posts', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
